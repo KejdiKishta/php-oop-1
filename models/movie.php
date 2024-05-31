@@ -34,11 +34,10 @@ class Movie {
     }
 
     public function setDescription(string $description) {
-        if (strlen($description) > 250) {
-            throw new Exception("description is too long, max. 250 characters");
+        if (strlen($description) > 300) {
+            throw new Exception("description is too long, max. 300 characters");
         }
 
         $this->description = $description;
     }
-
 }
